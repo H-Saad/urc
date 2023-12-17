@@ -2,10 +2,8 @@ import {List, ListItem,Box, ListItemText,Drawer,Divider,Typography} from "@mui/m
 import {User, Room} from "../model/common";
 import {CustomError} from "../model/CustomError";
 import { green } from '@mui/material/colors';
-import {JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState} from "react";
-import {getAllUsers, getAllRooms} from "./users_sidebar_api";
-import {useDispatch} from "react-redux";
-import {setUser} from "../Redux/Actions/userActions";
+import {useState} from "react";
+import {getAllUsers, getAllRooms} from "./users_sidebar_service";
 
 
 

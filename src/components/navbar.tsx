@@ -12,10 +12,14 @@ const Navbar = () => {
         nav('/login');
     }
 
+    function home(){
+        nav('/login');
+    }
+
     return (
         <AppBar position="static" sx={{ backgroundColor: green[500] }}>
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'white' }}>
+                <Typography onClick={home} variant="h6" component="div" sx={{ flexGrow: 1, color: 'white', cursor: 'pointer' }}>
                     Saad Chat
                 </Typography>
                 {username && (

@@ -15,7 +15,7 @@ export default async function handler(request) {
         const client = await db.connect();
         const {rowCount, rows} = await client.sql`select * from users where username = ${username} or email = ${email}`;
         if (rowCount === 1) {
-            const error = {code: "USER ALREADY EXIST", message: "L'utilisateur exist deja "};
+            const error = {code: "USER ALREADY EXIST", message: "Le nom d'utilisateur existe deja "};
             return new Response(JSON.stringify(error), {
                 status: 403,
                 headers: {'content-type': 'application/json'},

@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import {Alert} from "@mui/material";
 import {CustomError} from "../model/CustomError";
-import {registerUser} from "./registerApi";
+import {registerUser} from "./register_service";
 import Callback from "pusher-js/types/src/core/events/callback";
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/navbar';

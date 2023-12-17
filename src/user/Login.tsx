@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {loginUser} from "./loginApi";
+import {loginUser} from "./login_service";
 import {Session} from "../model/common";
 import {CustomError} from "../model/CustomError";
 import {Alert, Box, Button, Container, TextField, Typography} from "@mui/material";
