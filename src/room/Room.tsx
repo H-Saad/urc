@@ -2,10 +2,13 @@ import {Box, Button, Divider, TextField, Typography} from "@mui/material";
 import React from "react";
 import UserList from "../components/users_sidebar";
 import { MessageBox } from "../components/msg_box";
+import Navbar from '../components/navbar';
 
 
  function Room() {
     return (
+        <>
+        <Navbar></Navbar>
         <Box display="flex" height="100vh">
             <UserList />
             <Divider orientation="vertical" flexItem />
@@ -19,6 +22,7 @@ import { MessageBox } from "../components/msg_box";
                 <MessageBox />
             </Box>
         </Box>
+        </>
     );
 }
 

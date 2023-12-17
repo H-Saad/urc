@@ -9,6 +9,7 @@ import {CustomError} from "../model/CustomError";
 import {registerUser} from "./registerApi";
 import Callback from "pusher-js/types/src/core/events/callback";
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/navbar';
 
 
 function Register() {
@@ -48,6 +49,8 @@ function Register() {
 
 
     return (
+        <>
+        <Navbar></Navbar>
         <Container component="main" maxWidth="xs">
             <Box
                 sx={{
@@ -58,7 +61,7 @@ function Register() {
                 }}
             >
                 <Typography component="h1" variant="h5">
-                    Sign Up
+                    Inscription
                 </Typography>
                 <Box component="form" noValidate sx={{ mt: 1 }} onSubmit={handleSubmit}  ref={refFrom}>
                     <TextField
@@ -108,7 +111,7 @@ function Register() {
                             backgroundColor: '#45a049'
                         } }}
                     >
-                        Sign Up
+                        S inscrire
                     </Button>
                 </Box>
 
@@ -117,6 +120,7 @@ function Register() {
                 <Alert severity="error">{error.message}</Alert>
             }
         </Container>
+        </>
     );
 }
 

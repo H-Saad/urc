@@ -4,6 +4,7 @@ import {Session} from "../model/common";
 import {CustomError} from "../model/CustomError";
 import {Alert, Box, Button, Container, TextField, Typography} from "@mui/material";
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/navbar';
 
 export function Login() {
 
@@ -33,6 +34,7 @@ export function Login() {
 
     return (
         <>
+            <Navbar></Navbar>
             <Container component="main" maxWidth="xs">
                 <Box
                     sx={{
@@ -43,7 +45,7 @@ export function Login() {
                     }}
                 >
                     <Typography component="h1" variant="h5">
-                        Sign in
+                        Connection
                     </Typography>
                     <Box component="form" noValidate sx={{ mt: 1 }} onSubmit={handleSubmit}>
                         <TextField
@@ -73,7 +75,7 @@ export function Login() {
                                 backgroundColor: '#45a049'
                             } }}
                         >
-                            Sign In
+                            Connection
                         </Button>
                         <Button
                             fullWidth
@@ -82,7 +84,7 @@ export function Login() {
                             } }}
                             onClick={handleRegister}
                         >
-                            Create Account
+                            Creer un compte
                         </Button>
                     </Box>
                 </Box>
